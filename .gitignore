@@ -1,0 +1,17 @@
+# Ignore These Files
+
+# Executables
+*.exe
+
+# VS Code
+.vscode/
+
+# Object files
+*.o
+*.obj
+
+# Debug files
+*.pdb
+
+# Temporary files
+*.tmp
