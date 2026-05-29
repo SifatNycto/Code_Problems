@@ -2,9 +2,7 @@
 
 # Executables
 *.exe
-
-# VS Code
-.vscode/
+*.out
 
 # Object files
 *.o
@@ -13,5 +11,12 @@
 # Debug files
 *.pdb
 
-# Temporary files
-*.tmp
+# Visual Studio Code
+.vscode/
+
+# CMake
+build/
+cmake-build-*/
+
+# Logs
+*.log
