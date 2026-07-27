@@ -13,7 +13,7 @@ int main()
 
     if (luckyCounter == 4 || luckyCounter == 7)
         std::cout << "YES" << std::endl;
-
+r
     else
         std::cout << "NO" << std::endl;
 

@@ -32,7 +32,8 @@ int main()
         {
             std::cin >> x >> y >> z;
 
-            if ((x+y+z) >= 2) problems++;
+            if ((x+y+z) >= 2) 
+                problems++;
         }
     std::cout << problems;
 

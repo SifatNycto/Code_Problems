@@ -29,6 +29,13 @@
 
 
 
+
+
+
+
+
+
+
 int main()
 {
     int n, k, count = 0;
