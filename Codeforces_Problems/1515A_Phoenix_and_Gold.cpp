@@ -1,34 +1,55 @@
 #include <iostream>
-#include <string>
-#include <cctype>
 #include <vector>
+#include <utility>
 
+void execute();
 int main()
 {
+    std::ios_base::sync_with_stdio(false);
+    std::cin.tie(NULL);
+
     int t;
     std::cin >> t;
 
-    std::string number[t];
-
-    int n[t];
-    int k[t];
- 
-
-
-    for (int j = 0; j < t; j++)
-    {
-        std::cin >> n[j] >> k[j];
-
-        std::string number[n[j]];
-
-        for (int i = 0; i < n[j]; i++)
-        {
-            std::cin >> number[i];
-        }
-        
-      
-
-    }
+    while(t--) execute();
 
     return 0;
+}
+
+void execute()
+{
+    int n, x;
+    std::cin >> n >> x;
+
+    std::vector<int> w(n);
+    int total_weight = 0;
+
+    for (int i = 0; i < n; i++)
+    {
+        std::cin >> w[i];
+        total_weight += w[i];
+    }
+
+    if (total_weight == x)
+    {
+        std::cout << "NO" << "\n";
+        return;
+    }
+
+
+    std::cout << "YES" << "\n";
+    int present_weight = 0;
+
+    for (int i = 0; i < n; i++)
+    {
+        if ((present_weight + w[i]) == x)
+            std::swap(w[i], w[i+1]);
+
+        present_weight += w[i];
+    }
+
+    for (int i : w)
+    std::cout << i << " ";
+
+    std::cout << "\n";
 }
