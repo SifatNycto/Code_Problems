@@ -10,7 +10,6 @@ int main()
 
     int t;
     std::cin >> t;
-
     while(t--) execute();
 
     return 0;
@@ -36,10 +35,8 @@ void execute()
         return;
     }
 
-
     std::cout << "YES" << "\n";
     int present_weight = 0;
-
     for (int i = 0; i < n; i++)
     {
         if ((present_weight + w[i]) == x)
@@ -49,7 +46,7 @@ void execute()
     }
 
     for (int i : w)
-    std::cout << i << " ";
-
+        std::cout << i << " ";
+        
     std::cout << "\n";
 }
