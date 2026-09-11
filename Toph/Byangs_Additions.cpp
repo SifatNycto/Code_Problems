@@ -24,15 +24,11 @@ int main()
 
     if (values.size() >= 2)
     {
-        while (values[0].size() < values[1].size())
-            values[0] = "0" + values[0];
+        while (values[0].size() < values[1].size()) values[0] = "0" + values[0];
 
-        while (values[1].size() < values[0].size())
-            values[1] = "0" + values[1];
+        while (values[1].size() < values[0].size()) values[1] = "0" + values[1];
     }
     
-
-
     bool contain_carry = false;
     for (size_t i = 0; i < values.size() - 1; i++)
     {

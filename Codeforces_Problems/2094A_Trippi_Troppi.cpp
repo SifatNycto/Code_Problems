@@ -28,12 +28,9 @@ int main()
         }
     }
 
-    
-
     for (int i = 0; i < t; i++)
     {
         std::cout << modern[i] << "\n";
     }
 
     return 0;
-}
