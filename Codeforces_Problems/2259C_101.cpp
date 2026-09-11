@@ -13,12 +13,18 @@ int main()
     int t;
     std::cin >> t;
 
-    int n[t];
-    int answer[t];
+    int si[t];
 
+    std::vector<std::vector<std::string>> b(t);
 
-    while (t--)
+    for (int i = 0; i < t; i++)
     {
+        std::vector<std::vector<std::string>> a(t);
+        std::cin >> si[i];
+        for (int j = 0; j < si[i]; j++)
+        {
+            
+        }
 
     }
 
