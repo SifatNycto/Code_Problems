@@ -26,11 +26,20 @@ The goal of this repository is to document my progress in competitive programmin
 ```text
 Code_Problems/
 │
+├── AtCoder/
+│   ├── A_mnclr.cpp
+│   ├── B_Change.cpp
+│   └── ...
+│
 ├── Codeforces/
 │   ├── 4A_Watermelon.cpp
 │   ├── 71A_Way_Too_Long_Words.cpp
-│   ├── 231A_Team.cpp
-│   ├── 282A_Bit++.cpp
 │   └── ...
 │
+├── Toph/
+│   ├── Add_Them_Up.cpp
+│   ├── Alayna_and_String.cpp
+│   └── ...
+│
+├── .gitignore
 └── README.md
