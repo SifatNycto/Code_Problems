@@ -30,3 +30,19 @@ Range
 // sort(rall(v));
 // reverse(all(v));
 ```
+
+### Swap
+for swapping 
+```cpp
+swap(a, b);
+```
+swap header ->
+```cpp
+#include <utility>
+```
+### Sort
+Sorting header ->
+```cpp
+#include <algorithm>
+```
+
