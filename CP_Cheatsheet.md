@@ -1,19 +1,46 @@
 # 🏆 Competitive Programming Cheatsheet
 
-## ⚡ Fast I/O
+## Contest Template
 
+### ⚡ Fast I/O
 ```cpp
 #include <bits/stdc++.h>
 using namespace std;
 
-int main()
-{
+using ll = long long;
+
+int main() {
+
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
 
-    // Your code here
+    // Solution here
 
     return 0;
+}
+```
+---
+
+## Test cases handling
+```cpp
+int t;
+cin >> t;
+
+while(t--) {
+
+    int n;
+    cin >> n;
+
+    // solve this test case
+
+}
+```
+---
+
+### Range based loop
+```cpp
+for(int x : a) {
+    cout << x << " ";
 }
 ```
 
@@ -45,4 +72,30 @@ Sorting header ->
 ```cpp
 #include <algorithm>
 ```
+---
 
+```cpp
+// Sorting
+sort(a.begin(), a.end());
+
+// Descending:
+sort(a.rbegin(), a.rend());
+
+// min/max
+min(a,b);
+max(a,b);
+```
+---
+
+### Boolen function
+```cpp
+bool isEven(int x) {
+    return x % 2 == 0;
+}
+
+if(isEven(x)) {
+    cout << "Even";
+}
+```
+
+---

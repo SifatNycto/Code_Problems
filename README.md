@@ -21,6 +21,12 @@ The goal of this repository is to document my progress in competitive programmin
 
 ---
 
+## Personal CP Cheatsheet Documentation
+
+[🔗 CP_Cheatsheet](https://github.com/SifatNycto/Code_Problems/blob/main/CP_Cheatsheet.md)
+
+---
+
 ## Repository Structure
 
 ```text
@@ -42,4 +48,5 @@ Code_Problems/
 │   └── ...
 │
 ├── .gitignore
+├── CP_Cheatsheet.md
 └── README.md
