@@ -47,7 +47,7 @@ for(int x : a) {
 ---
 
 
-# Macros
+### Macros
 Range
 ```cpp
 #define all(x) (x).begin(), (x).end()
@@ -99,3 +99,79 @@ if(isEven(x)) {
 ```
 
 ---
+
+### Binary Search 
+Standard Template
+```cpp
+long long lo = 0, hi = 1e18;
+
+while(lo < hi) {
+    long long mid = lo + (hi - lo) / 2;
+
+    if(check(mid))
+        hi = mid;
+    else
+        lo = mid + 1;
+}
+```
+---
+
+### Sort
+Ascending order
+```cpp
+sort(a.begin(), a.end());
+```
+Descending order
+```cpp
+sort(a.rbegin(), a.rend());
+```
+
+---
+
+
+### Map
+For Frequency the occurance
+```text
+1 2 2 3 3 3
+```
+
+```cpp
+// O(log n) access
+map<int,int> mp;
+
+for(int x : a) {
+    mp[x]++;
+}
+```
+
+```text
+mp[1] = 1
+mp[2] = 2
+mp[3] = 3
+```
+
+### Unordered Map
+```cpp
+// O(1) access
+unordered_map<int,int> mp;
+```
+
+### Set
+For storing unique values in sorted order
+
+```cpp
+set<int> s;
+
+s.insert(5);
+s.insert(2);
+s.insert(5);
+s.insert(10);
+```
+Output
+```text
+2 5 10
+```
+
+---
+
+
