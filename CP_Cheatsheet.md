@@ -175,3 +175,28 @@ Output
 ---
 
 
+### Unique finding
+Boolean array approach
+```cpp
+bool seen[26] = {};
+int distinct = 0;
+
+for (char c : username)
+{
+    int index = c - 'a';
+
+    if (!seen[index])
+    {
+        seen[index] = true;
+        distinct++;
+    }
+}
+```
+
+Set approach
+```cpp
+set<char> uniqueCharacters;
+
+for (char c : items)
+    uniqueCharacters.insert(c);
+```

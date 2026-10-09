@@ -1,29 +1,80 @@
-#include <iostream>
-#include <string>
-#include <cctype>
+// #include <iostream>
+// #include <string>
+// #include <cctype>
+
+// int main()
+// {
+//     std::string user_name;
+//     std::cin >> user_name;
+
+//     std::string result = "";
+
+//     for (char &u : user_name)
+//         u = tolower(u);
+
+//     for (char u : user_name)
+//     {
+//         if (result.find(u) == std::string::npos)
+//             result += u;
+//     }
+
+//     int size = result.length();
+
+//     if (size % 2 == 0)
+//         std::cout << "CHAT WITH HER!";
+//     else
+//         std::cout << "IGNORE HIM!";
+    
+//     return 0;
+// }
+
+
+// updated method
+#include <bits/stdc++.h>
+using namespace std;
+
+// int main()
+// {
+//     string username;
+//     cin >> username;
+
+//     set<char> uniqueCharacters;
+
+//     for (char c : username)
+//         uniqueCharacters.insert(c);
+    
+//     if (uniqueCharacters.size() % 2 == 0)
+//         cout << "CHAT WITH HER!\n";
+//     else
+//         cout << "IGNORE HIM!\n";
+    
+//     return 0;
+// }
+
 
 int main()
 {
-    std::string user_name;
-    std::cin >> user_name;
+    string username;
+    cin >> username;
 
-    std::string result = "";
+    bool seen[26] = {};
+    int distinct = 0;
 
-    for (char &u : user_name)
-        u = tolower(u);
-
-    for (char u : user_name)
+    for (char c : username)
     {
-        if (result.find(u) == std::string::npos)
-            result += u;
+        int index = c - 'a';
+
+        if (!seen[index])
+        {
+            seen[index] = true;
+            distinct++;
+        }
     }
-
-    int size = result.length();
-
-    if (size % 2 == 0)
-        std::cout << "CHAT WITH HER!";
+    
+    if (distinct % 2 == 0)
+        cout << "CHAT WITH HER!\n";
     else
-        std::cout << "IGNORE HIM!";
+        cout << "IGNORE HIM!\n";
     
     return 0;
 }
