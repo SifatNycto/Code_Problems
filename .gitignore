@@ -14,6 +14,9 @@
 # Visual Studio Code
 .vscode/
 
+# CPH residuals
+.cph/
+
 # CMake
 build/
 cmake-build-*/

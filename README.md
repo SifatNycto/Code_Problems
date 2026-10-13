@@ -37,6 +37,11 @@ Code_Problems/
 │   ├── B_Change.cpp
 │   └── ...
 │
+├── CodeChef/
+│   ├── 500_Greater_Average.cpp
+│   ├── 504_Subscriptions.cpp
+│   └── ...
+│
 ├── Codeforces/
 │   ├── 4A_Watermelon.cpp
 │   ├── 71A_Way_Too_Long_Words.cpp
