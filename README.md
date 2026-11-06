@@ -47,11 +47,23 @@ Code_Problems/
 │   ├── 71A_Way_Too_Long_Words.cpp
 │   └── ...
 │
+├── HackerRank/
+│   |
+│   └── ...
+│
+├── Phitron/
+│   |
+│   └── ...
+│
 ├── Toph/
 │   ├── Add_Them_Up.cpp
 │   ├── Alayna_and_String.cpp
 │   └── ...
 │
 ├── .gitignore
+│
 ├── CP_Cheatsheet.md
+│
+├── random.cpp
+│
 └── README.md
