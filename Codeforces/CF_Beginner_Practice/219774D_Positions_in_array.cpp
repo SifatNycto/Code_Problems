@@ -1,21 +1,26 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+void arr_pos(int arr[], int n)
+{
+    for (int i = 0; i < n; i++)
+        if (arr[i] <= 10)
+            cout << "A[" << i << "] = " << arr[i] << "\n";
+}
+
 int main()
 {
-    ios_base::sync_with_stdio(false);
+    ios::sync_with_stdio(false);
     cin.tie(nullptr);
 
-    int N;
-    cin >> N;
-    int A[N];
+    int n;
+    cin >> n;
 
-    for (int i = 0; i < N; i++)
-        cin >> A[i];
-
-    for (int i = 0; i < N; i++)
-        if (A[i] <= 10)
-            cout << "A[" << i << "] = " << A[i] << "\n";
+    int arr[n];
+    for (int i = 0; i < n; i++)
+        cin >> arr[i];
+    
+    arr_pos(arr, n);
 
     return 0;
 }

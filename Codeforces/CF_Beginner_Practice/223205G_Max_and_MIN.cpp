@@ -8,7 +8,7 @@ void max_min(int arr[], int n)
 
     for (int i = 0; i < n; i++)
     {
-         if (arr[i] > max)
+        if (arr[i] > max)
             max = arr[i];
         
         if (arr[i] < min)
